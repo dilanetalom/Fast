@@ -1,0 +1,23 @@
+*{
+    font-family: "Source Sans Pro", sans-serif;
+}
+.menu a li{
+    position: relative;
+}
+.menu a li::before{
+  content: '';
+  height: 3px;
+  width: 0px;
+  background-color: white;
+  margin-top: 25px;
+  transition: width 0.5s ease;
+  position: absolute;
+}
+.menu a:hover  li::before {
+    width: 100%;
+  }
+  #menu2{
+    height: 100vh;
+    margin-left: -100%;
+    transition: margin-left 0.5s;
+  }
